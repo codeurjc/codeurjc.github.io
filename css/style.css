@@ -118,7 +118,7 @@ h4 {
     letter-spacing: 1px;
     line-height: 1.5;
 }
-p {
+p,ul {
     color: #7a7a7a;
 	font-size: 14px;
 	line-height: 20px;
@@ -1261,6 +1261,11 @@ nav {
 
 /*----- Data2 -----*/
 #data2 {
+    padding-top: 80px;
+    padding-bottom: 65px;
+}
+
+#inscripcion {
     padding-top: 80px;
     padding-bottom: 65px;
 }
