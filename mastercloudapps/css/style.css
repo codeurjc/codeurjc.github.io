@@ -120,10 +120,10 @@ h4 {
     line-height: 1.5;
 }
 p {
-    color: #7a7a7a;
-	font-size: 14px;
+    color: #a1a1a1;
+	font-size: 15px;
 	line-height: 20px;
-	font-weight: 400;
+    font-weight: 400;
 }  
 
 .section-title {
@@ -1158,6 +1158,7 @@ nav {
 .about-text {
     margin-top: 20px;
     padding-right: 60px;
+    text-align: justify;
 } 
 
 #about p {
