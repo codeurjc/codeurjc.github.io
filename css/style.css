@@ -3524,3 +3524,13 @@ pre {
 .mail-subscription {
     padding-top: 3em;
 }
+#img-icon{
+    position: absolute;
+    width: 50px;
+}
+#sponsors {
+    text-align: center;
+}
+#sponsors img {
+    width: 120px; margin: 10px;
+}

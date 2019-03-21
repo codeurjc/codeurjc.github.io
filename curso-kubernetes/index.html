@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CodeURJC - Curso Kubernetes</title>
+        <meta name="description" content="Página web informativa del curso de Kubernetes de CodeURJC" />
+        <meta
+            name="keywords"
+            content="cloud native apps, cloud computing, kubernetes, devops, development, backend, fault tolerance, scalability, elasticity"
+        />
+        <meta name="author" content="CodeURJC" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+        <!-- Stlylesheet -->
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Skin Color -->
+        <link rel="stylesheet" href="/css/colors/red.css" id="color-skins" />
+        
+
+        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', 'UA-71960812-1', 'auto');
+                ga('send', 'pageview');
+                </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71960812-1"></script>
+        <script>
+            
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-71960812-1');
+        </script>
+
+        <script>
+            function myFunction() {
+                console.log("Se ha clickado el boton");
+                /*ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'PDF',
+                    eventAction: 'Download',
+                    eventLabel: 'Descarga slides del curso Kubernetes'
+                });*/
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Prueba',
+                    eventAction: 'PruebaPDF',
+                    eventLabel: 'Prueba',
+                    
+                        hitCallback: function() {
+                            console.log("evento enviado!!!");
+                        }
+                    
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--Start Header-->
+        <header>
+            <nav class="navbar navbar-default navbar-alt" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand to-top" rel="home" href="#">
+                            <img src="/img/assets/logo-white.png" alt="Vossen" class="logo-big" />
+                            <img src="/img/assets/logo-dark.png" alt="Vossen" class="logo-small" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="nav navbar-nav  navbar-right">
+                            <li><a class="to-top">Inicio</a></li>
+                            <li class="to-section"><a href="#features">Curso Kubernetes</a></li>
+                            <li class="to-section"><a href="/mastercloudapps/" target="_blank">Máster</a></li>
+                            <li class="to-section"><a href="#get-connected">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header>
+        <!--End Header-->
+
+        <!-- Start Home Fullwidth Section -->
+        <section id="home-parallax-fullwidth">
+            <div class="home-container text-center op-1">
+                <div class="home-title">
+                    <div>
+                        <h3 class="white wow fadeInDown">CodeURJC</h3>
+                        <h2 class="white wow fadeInDown">Curso KUBERNETES</h2>
+                        <p class="home-subheading wow fadeInDown">Universidad Rey Juan Carlos</p>
+                    </div>
+                </div>
+                <div class="home-button">
+                    <a href="#features" class="btn btn-primary btn-scroll">Más información</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Home Fullwidth Section -->
+
+        <div class="site-wrapper content">
+            <!-- Start Features Section -->
+            <section id="features">
+                <div class="container">
+
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-12">
+                                <div class="feature-icon">
+                                        <i class="icon-social-youtube size-2x highlight"></i>
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4>Curso Kubernetes - 5h</h4>
+                                    </div>
+                              <div class="embed-responsive embed-responsive-16by9">     
+                                <iframe
+                                    class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/5ovqsvqwtZM?rel=0"
+                                    frameborder="0"
+                                    allow="autoplay; encrypted-media"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top: 10%">
+                                    <div class="feature-icon">
+                                        <img id="img-icon" class="size-2x highlight" src="/img/assets/kubernetes.png" />
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4>¿Quieres saber más de Kubernetes?</h4>
+                                        <p class="feature-description">
+                                            CodeURJC está preparando un Máster para profundizar más en éstas tecnologías. ¡Échale un vistazo!
+                                        </p>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <a href="/mastercloudapps/" target="_blank" class="btn btn-primary">Máster computación en la nube</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10%">
+                                <div class="col-md-12">
+                                    <div class="feature-icon">
+                                        <i class="icon-like size-2x highlight"></i>
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4>Agradecimientos</h4>
+                                    </div>
+                                    <div id="sponsors">
+                                        <a href="https://www.autentia.com/" target="_blank">
+                                            <img src="/img/assets/logo-autentia.svg" />
+                                        </a>
+                                        <a href="https://www.urjc.es/etsii" target="_blank">
+                                            <img src="/img/assets/etsii.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            
+                            <iframe src="//www.slideshare.net/slideshow/embed_code/key/Jcw5vklZnUjjUI" width="100%" height="500" frameborder="0" marginwidth="0"
+                            marginheight="0" scrolling="no" allowfullscreen> </iframe>
+                            <div style="text-align: center;">
+                                <a href="/Curso_Kubernetes_CodeURJC.pdf" download onclick="ga('send', 'event', 'Descargas', 'DescargaPDF', 'Descarga PDF curso Kubernetes');" class="btn btn-primary">Descargar</a>
+                            </div>
+                          
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Features Section -->
+            <!-- Start Get Connected -->
+            <section id="get-connected" class="parallax-section-6">
+                <div class="container">
+                    <div class="col-md-12 text-center">
+                        <h3 class="section-title white wow fadeInUp">No te pierdas nada.</h3>
+                        <p class="subheading grey wow fadeInUp">Sigue en contacto con <span class="highlight">CodeURJC</span>!</p>
+                    </div>
+
+                    <div class="row text-center wow fadeInUp">
+                        <ul class="connected-icons text-center">
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://twitter.com/CodeUrjc">
+                                    <span class="icon icon-social-twitter size-6x"></span>
+                                    <h4 class="white">Twitter</h4>
+                                    <span class="grey">Síguenos</span>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://www.youtube.com/channel/UCKms5Ne7sp_lJQH51iWY0cg/feed">
+                                    <span class="icon icon-social-youtube size-6x"></span>
+                                    <h4 class="white">Youtube</h4>
+                                    <span class="grey">Mira nuestros vídeos</span>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="http://codeurjc.wordpress.com">
+                                    <span class="icon ion-social-wordpress-outline size-6x"></span>
+                                    <h4 class="white">Wordpress</h4>
+                                    <span class="grey">Sigue nuestro blog</span>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="https://github.com/codeurjc">
+                                    <span class="icon ion-social-octocat size-6x"></span>
+                                    <h4 class="white">GitHub</h4>
+                                    <span class="grey">nuestro software</span>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="mailto:codeurjc@gmail.com">
+                                    <span class="icon icon-envelope-open size-6x"></span>
+                                    <h4 class="white">Email</h4>
+                                    <span class="grey">codeurjc@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Begin Mailchimp Signup Form -->
+
+                    <div class="mail-subscription col-md-12 col-sm-12 wow fadeInUp text-center">
+                        <!-- Begin MailChimp Signup Form -->
+
+                        <form
+                            action="https://codeurjc.us20.list-manage.com/subscribe/post?u=0b5c8f3e416896bfe02350a8b&amp;id=ead19e1f30"
+                            method="post"
+                            id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form"
+                            class="validate"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input
+                                type="email"
+                                value=""
+                                name="EMAIL"
+                                class="email subscribe-input"
+                                id="mce-EMAIL"
+                                placeholder="Correo electrónico"
+                                required
+                            />
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_953c0bb62408c1fbc9c860c75_5e52f753cd" tabindex="-1" value="" />
+                            </div>
+
+                            <input
+                                type="submit"
+                                value="Suscribir"
+                                name="subscribe"
+                                id="mc-embedded-subscribe"
+                                class="btn-primary"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Get Connected -->
+
+            <!-- Start Footer 1 -->
+            <footer id="footer">
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <p>
+                                    © 2015 CodeURJC. Tema diseñado por
+                                    <a href="http://themeforest.net/user/vossendesign/portfolio" class="logo">Vossen Design.</a>
+                                    All Rights Reserved.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <ul id="social-icons">
+                                    <li>
+                                        <a target="_blank" href="https://twitter.com/CodeUrjc"
+                                            ><i class="icon ion-social-twitter"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/channel/UCKms5Ne7sp_lJQH51iWY0cg/feed"
+                                            ><i class="icon ion-social-youtube"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://codeurjc.wordpress.com"
+                                            ><i class="icon ion-social-wordpress-outline"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://github.com/codeurjc"
+                                            ><i class="icon ion-social-octocat"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="mailto:codeurjc@gmail.com"
+                                            ><i class="icon ion-android-drafts"></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Copyright -->
+            </footer>
+            <!-- End Footer 1 -->
+
+            <!-- Start Back To Top -->
+            <a id="back-to-top"><i class="icon ion-chevron-up"></i></a>
+            <!-- End Back To Top -->
+        </div>
+        <!-- End Site Wrapper -->
+
+        <!-- jQuery -->
+        <script src="/js/plugins/jquery.min.js"></script>
+        <script src="/js/plugins/moderniz.min.js"></script>
+        <script src="/js/plugins/smoothscroll.min.js"></script>
+        <script src="/js/plugins/revslider.min.js"></script>
+        <script src="/js/plugins/bootstrap.min.js"></script>
+        <script src="/js/plugins/waypoints.min.js"></script>
+        <script src="/js/plugins/parallax.min.js"></script>
+        <script src="/js/plugins/easign1.3.min.js"></script>
+        <script src="/js/plugins/cubeportfolio.min.js"></script>
+        <script src="/js/plugins/owlcarousel.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="/js/plugins/gmap3.min.js"></script>
+        <script src="/js/plugins/wow.min.js"></script>
+        <script src="/js/plugins/counterup.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
