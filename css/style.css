@@ -1078,7 +1078,7 @@ nav {
 }
 @media (min-width: 992px) {
     .features-row {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         text-align: left
     }
     .feature-column {
@@ -3537,4 +3537,13 @@ pre {
 
 #t3chfest img{
     width: 220px; margin: 10px;
+}
+
+.master-images img{
+    max-width: 100%;
+}
+
+.index1{
+    font-weight: bold;
+    line-height: 2;
 }
