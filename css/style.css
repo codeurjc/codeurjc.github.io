@@ -1164,6 +1164,14 @@ nav {
 }
 
 /*----- Content Section -----*/
+#methodology {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#methodology p {
+    line-height: 1.8;
+}
+
 #data {
     padding-top: 60px;
     padding-bottom: 60px;
