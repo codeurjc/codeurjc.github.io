@@ -454,7 +454,8 @@ p,ul {
     line-height: 40px!important;
 }
 .home-button {
-	margin-top: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 .home-bottom {
 	position: absolute;
@@ -871,7 +872,7 @@ nav {
 .navbar-default .navbar-brand .logo-big {
 	position:absolute;
     opacity: 1;
-    width: 180px;
+    width: 220px;
     margin-top: 11px; 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -881,7 +882,7 @@ nav {
 }
 .navbar-default .navbar-brand .logo-small {
 	position:absolute;
-    width: 180px;
+    width: 220px;
     margin-top: 11px;
     opacity: 0;
     -webkit-transition: all 0.4s ease;
